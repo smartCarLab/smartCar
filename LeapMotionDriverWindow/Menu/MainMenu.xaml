@@ -1,0 +1,33 @@
+﻿<custom:MenuTemplate x:Class="LeapMotionDriverWindow.Menu.MainMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:custom="clr-namespace:LeapMotionDriverWindow.Menu"
+      Width="1000" Height="400" Background="Transparent">
+    <Grid x:Name="menuContainer" VerticalAlignment="Top" HorizontalAlignment="Left">
+        <custom:MenuButton x:Name="GMapButton">
+            <custom:MenuButton.Background>
+                <ImageBrush ImageSource="../Images/mapShow.png"></ImageBrush>
+            </custom:MenuButton.Background>
+        </custom:MenuButton>
+        <custom:MenuButton x:Name="VideoButton">
+            <custom:MenuButton.Background>
+                <ImageBrush ImageSource="../Images/videoShow.png"></ImageBrush>
+            </custom:MenuButton.Background>
+        </custom:MenuButton>
+        <custom:MenuButton>
+            <custom:MenuButton.Background>
+                <ImageBrush ImageSource="../Images/1.png"></ImageBrush>
+            </custom:MenuButton.Background>
+        </custom:MenuButton>
+        <custom:MenuButton>
+            <custom:MenuButton.Background>
+                <ImageBrush ImageSource="../Images/2.png"></ImageBrush>
+            </custom:MenuButton.Background>
+        </custom:MenuButton>
+        <custom:MenuButton>
+            <custom:MenuButton.Background>
+                <ImageBrush ImageSource="../Images/3.png"></ImageBrush>
+            </custom:MenuButton.Background>
+        </custom:MenuButton>
+    </Grid>
+</custom:MenuTemplate>

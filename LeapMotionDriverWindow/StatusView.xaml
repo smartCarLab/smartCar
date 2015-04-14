@@ -1,0 +1,83 @@
+﻿<Grid x:Class="LeapMotionDriverWindow.StatusView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"       
+      xmlns:ani="clr-namespace:ATAnimation;assembly=ATAnimation"
+      xmlns:custom="clr-namespace:LoadingFlyoutPanel.Controls"
+      Width="1920" Height="200">
+    <DockPanel LastChildFill="False" HorizontalAlignment="Left" x:Name="statusContainer" Background="#88000000">
+        <Viewbox Stretch="Uniform">
+            <Grid Width="500" Height="320">
+                <Grid>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Images/status.png"></ImageBrush>
+                    </Grid.Background>
+                </Grid>
+                <Grid Width="115" Height="116" Margin="32,46,353,158">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Images/warning.png"></ImageBrush>
+                    </Grid.Background>
+                </Grid>
+                <ani:AGridContainer x:Name="statusAnimaiton" Width="115" Height="118" Margin="188,44,197,158"></ani:AGridContainer>
+                <DockPanel LastChildFill="False" Width="500" Height="65" VerticalAlignment="Bottom">
+                    <Grid x:Name="yearPanel" HorizontalAlignment="Left" Visibility="Hidden" VerticalAlignment="Top" DockPanel.Dock="Left" Margin="10 0 0 0" Width="80" Height="65">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid x:Name="Y1" Grid.Column="0"></Grid>
+                        <Grid x:Name="Y2" Grid.Column="1"></Grid>
+                        <Grid x:Name="Y3" Grid.Column="2"></Grid>
+                        <Grid x:Name="Y4" Grid.Column="3"></Grid>
+                    </Grid>
+                    <Grid x:Name="monthDayPanel" HorizontalAlignment="Left" Visibility="Hidden" VerticalAlignment="Top" Margin="0 0 30 0" DockPanel.Dock="Left" Width="100" Height="65">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>                            
+                        </Grid.ColumnDefinitions>
+                        <Grid x:Name="M1" Grid.Column="0"></Grid>
+                        <Grid x:Name="M2" Grid.Column="1"></Grid>                        
+                        <Grid x:Name="D1" Grid.Column="2"></Grid>
+                        <Grid x:Name="D2" Grid.Column="3"></Grid>
+                    </Grid>
+                    <Grid x:Name="timePanel" DockPanel.Dock="Right" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0 0 45 0" Width="200" Height="65">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid x:Name="H1" Grid.Column="0"></Grid>
+                        <Grid x:Name="H2" Grid.Column="1"></Grid>
+                        <Grid Grid.Column="2" Height="30">
+                            <Grid.Background>
+                                <ImageBrush ImageSource="Images/dot.png" Stretch="Uniform"></ImageBrush>
+                            </Grid.Background>
+                        </Grid>
+                        <Grid x:Name="m1" Grid.Column="3"></Grid>
+                        <Grid x:Name="m2" Grid.Column="4"></Grid>
+                        <Grid Grid.Column="5" Height="30">
+                            <Grid.Background>
+                                <ImageBrush ImageSource="Images/dot.png" Stretch="Uniform"></ImageBrush>
+                            </Grid.Background>
+                        </Grid>
+                        <Grid x:Name="s1" Grid.Column="6"></Grid>
+                        <Grid x:Name="s2" Grid.Column="7"></Grid>
+                    </Grid>
+                </DockPanel>
+            </Grid>
+        </Viewbox>
+        <Grid x:Name="route" Width="290" Height="190" Margin="5">
+            <Viewbox>
+                <custom:CircularProgressBar></custom:CircularProgressBar>
+            </Viewbox>
+        </Grid>
+    </DockPanel>
+</Grid>

@@ -1,0 +1,8 @@
+﻿<Window x:Class="LeapMotionDriverWindow.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MenuWindow" Height="500" Width="1000" WindowState="Normal" WindowStyle="None" AllowsTransparency="True" BorderThickness="0" Background="Transparent" WindowStartupLocation="Manual" Cursor="None">
+    <Viewbox Width="800" Height="500" Stretch="Uniform">
+        <Grid Width="1000" Height="500" x:Name="container"></Grid>
+    </Viewbox>
+</Window>

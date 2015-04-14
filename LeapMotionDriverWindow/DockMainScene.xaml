@@ -1,0 +1,17 @@
+﻿<Grid x:Class="LeapMotionDriverWindow.DockMainScene"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:custom="clr-namespace:LeapMotionDriverWindow"      
+      Width="1920" Height="1080"> 
+    <Grid.RowDefinitions>
+        <RowDefinition Height="100"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+        <RowDefinition Height="200"></RowDefinition>
+    </Grid.RowDefinitions>
+    <custom:DockView Grid.Row="0"></custom:DockView>
+    <Grid Grid.Row="1" Grid.RowSpan="2" x:Name="workView" Width="1920" Height="980">
+        <Grid x:Name="googleMapView"></Grid>
+        <MediaElement x:Name="mainMediaElement" LoadedBehavior="Manual" MediaEnded="mainMediaElement_MediaEnded" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top"></MediaElement>
+    </Grid>
+    <custom:StatusView x:Name="statusView" Grid.Row="2"></custom:StatusView>
+</Grid>

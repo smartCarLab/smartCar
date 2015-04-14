@@ -1,0 +1,16 @@
+﻿<Grid x:Class="LeapMotionDriverWindow.DockView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:ani="clr-namespace:ATAnimation;assembly=ATAnimation"
+      Width="1920" Height="100" Background="#0A000000">
+    <Viewbox HorizontalAlignment="Left">
+        <DockPanel LastChildFill="False">
+            <DockPanel LastChildFill="False" x:Name="dockIconContainer" DockPanel.Dock="Left"></DockPanel>
+            <DockPanel LastChildFill="False" x:Name="topContainer" DockPanel.Dock="Left">
+                <Viewbox Height="100">
+                    <ani:AGridContainer x:Name="topAnimation"></ani:AGridContainer>
+                </Viewbox>
+            </DockPanel>
+        </DockPanel>
+    </Viewbox>
+</Grid>

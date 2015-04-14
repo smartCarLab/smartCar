@@ -1,0 +1,14 @@
+﻿<Grid x:Class="LeapMotionDriverWindow.Menu.MenuButton"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Width="200" Height="200">
+    <Grid.RenderTransformOrigin>
+        <Point X="0.5" Y="1"></Point>
+    </Grid.RenderTransformOrigin>    
+    <Grid.RenderTransform>
+        <TransformGroup>
+            <ScaleTransform x:Name="scaleTransform"></ScaleTransform>
+            <TranslateTransform x:Name="translate"></TranslateTransform>
+        </TransformGroup>
+    </Grid.RenderTransform>
+</Grid>

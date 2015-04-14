@@ -1,0 +1,28 @@
+﻿<custom:MenuTemplate x:Class="LeapMotionDriverWindow.Menu.VideoMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:custom="clr-namespace:LeapMotionDriverWindow.Menu"
+      Width="1000" Height="400" Background="Transparent">
+    <Grid x:Name="menuContainer" VerticalAlignment="Top" HorizontalAlignment="Left">
+        <custom:MenuButton x:Name="FullScreenButton">
+            <custom:MenuButton.Background>
+                <ImageBrush ImageSource="../Images/videoFullScreen.png"></ImageBrush>
+            </custom:MenuButton.Background>
+        </custom:MenuButton>
+        <custom:MenuButton x:Name="VideoButton">
+            <custom:MenuButton.Background>
+                <ImageBrush ImageSource="../Images/videoZoomIn.png"></ImageBrush>
+            </custom:MenuButton.Background>
+        </custom:MenuButton>
+        <custom:MenuButton x:Name="ExitButton" >
+            <custom:MenuButton.Background>
+                <ImageBrush ImageSource="../Images/videoExit.png"></ImageBrush>
+            </custom:MenuButton.Background>
+        </custom:MenuButton>
+        <custom:MenuButton x:Name="PreviousMenu" >
+            <custom:MenuButton.Background>
+                <ImageBrush ImageSource="../Images/exit.png"></ImageBrush>
+            </custom:MenuButton.Background>
+        </custom:MenuButton>
+    </Grid>
+</custom:MenuTemplate>

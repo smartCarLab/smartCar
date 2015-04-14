@@ -1,0 +1,9 @@
+﻿<Window x:Class="LeapMotionDriverWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:custom="clr-namespace:LeapMotionDriverWindow"
+        Title="MainWindow" Height="768" Width="1024" WindowState="Maximized" Left="0" Top="0" WindowStyle="None" ResizeMode="NoResize" KeyDown="Window_KeyDown" Cursor="None">
+    <Viewbox Stretch="Fill">
+        <custom:DockMainScene></custom:DockMainScene>
+    </Viewbox>
+</Window>
