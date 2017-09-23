@@ -62,6 +62,7 @@ namespace LeapMotionDriverWindow
                         this.SetNumberImage(m2, now, 11);
                         this.SetNumberImage(s1, now, 12);
                         this.SetNumberImage(s2, now, 13);
+                        this.SetNumberImage(s3, now, 14);
                     }));
                 }
             }));
