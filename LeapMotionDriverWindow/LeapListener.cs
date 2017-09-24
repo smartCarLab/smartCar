@@ -27,7 +27,8 @@ namespace LeapMotionDriverWindow
         }
         public override void OnInit(Controller cntrlr)
         {
-            Console.WriteLine("Initialized");
+            Console.WriteLine("Initialized");//123
+            Console.WriteLine("Initialized");//123
         }
         public override void OnConnect(Controller cntrlr)
         {
@@ -39,6 +40,7 @@ namespace LeapMotionDriverWindow
         }
         public override void OnExit(Controller cntrlr)
         {
+            Console.WriteLine("Exit");
             Console.WriteLine("Exited");
         }
         public override void OnFrame(Controller controller)
