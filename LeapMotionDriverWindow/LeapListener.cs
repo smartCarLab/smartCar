@@ -27,7 +27,7 @@ namespace LeapMotionDriverWindow
         }
         public override void OnInit(Controller cntrlr)
         {
-            Console.WriteLine("Initialized");
+            Console.WriteLine("Initialized"); Console.WriteLine("test");
         }
         public override void OnConnect(Controller cntrlr)
         {
