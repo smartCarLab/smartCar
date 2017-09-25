@@ -27,11 +27,12 @@ namespace LeapMotionDriverWindow
         }
         public override void OnInit(Controller cntrlr)
         {
+            Console.WriteLine("test"); Console.WriteLine("test"); Console.WriteLine("test"); Console.WriteLine("test");
             Console.WriteLine("Initialized"); Console.WriteLine("test");
         }
         public override void OnConnect(Controller cntrlr)
         {
-            Console.WriteLine("Connected");
+            Console.WriteLine("Connected"); Console.WriteLine("Connected"); Console.WriteLine("Connected");
         }
         public override void OnDisconnect(Controller cntrlr)
         {
