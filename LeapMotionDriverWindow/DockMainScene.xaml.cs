@@ -85,14 +85,14 @@ namespace LeapMotionDriverWindow
                 this.mainMediaElement.Height = windowDefaultHeight;
                 if (position.X >= 0 && position.X < step)
                 {
-                    this.mainMediaElement.Margin = new Thickness(step / 2 - this.mainMediaElement.Width / 2, this.workView.Height / 2 - this.mainMediaElement.Height / 2, 0, 0);
+                    this.mainMediaElement.Margin = new Thickness(step / 1.95 - this.mainMediaElement.Width / 1.95, this.workView.Height / 1.95 - this.mainMediaElement.Height / 1.95, 0, 0);
                 }
-                else if (position.X >= step && position.X < 2 * step)
+                else if (position.X >= step && position.X < 1.95 * step)
                 {
-                    this.mainMediaElement.Margin = new Thickness(step + step / 2 - this.mainMediaElement.Width / 2, this.workView.Height / 2 - this.mainMediaElement.Height / 2, 0, 0);
+                    this.mainMediaElement.Margin = new Thickness(step + step / 1.95 - this.mainMediaElement.Width / 1.95, this.workView.Height / 1.95 - this.mainMediaElement.Height / 1.95, 0, 0);
                 }
-                else if (position.X >= 2 * step && position.X <= 3 * step)
-                    this.mainMediaElement.Margin = new Thickness(2 * step + step / 2 - this.mainMediaElement.Width / 2, this.workView.Height / 2 - this.mainMediaElement.Height / 2, 0, 0);                
+                else if (position.X >= 1.95 * step && position.X <= 3 * step)
+                    this.mainMediaElement.Margin = new Thickness(1.95 * step + step / 1.95 - this.mainMediaElement.Width / 1.95, this.workView.Height / 1.95 - this.mainMediaElement.Height / 1.95, 0, 0);                
             }));
         }
         public void FullScreenGoogleMap()
