@@ -1,0 +1,20 @@
+﻿LeapMotionDriverWindow
+
+
+winexe
+C#
+.cs
+\\140.124.73.33\Data 8TB\[Adviser]\2016-11-22 Smart Car and Snow\snow&car\smartCar project\LeapMotionDriverWindow\obj\Debug\
+LeapMotionDriverWindow
+none
+false
+DEBUG;TRACE
+\\140.124.73.33\Data 8TB\[Adviser]\2016-11-22 Smart Car and Snow\snow&car\smartCar project\LeapMotionDriverWindow\App.xaml
+10-1769449378
+1561964390716
+22-556119305
+181466134341
+Controls\CircularProgressBar.xaml;DockMainScene.xaml;DockView.xaml;MenuWindow.xaml;Menu\VideoMenu.xaml;Menu\GMapMenu.xaml;Menu\MainMenu.xaml;Menu\MenuButton.xaml;StatusView.xaml;MainWindow.xaml;
+
+True
+

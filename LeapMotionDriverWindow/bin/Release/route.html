@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <style>
+      html, body, #map-canvas {
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      background-color: #DDDDDD
+      }
+    </style>
+    <script src="http://ditu.google.cn/maps/api/js?sensor=false"></script>
+    <script>
+      google.maps.visualRefresh = true;
+      var map;
+      var directionsDisplay;
+      var directionsService = new google.maps.DirectionsService();
+
+      function initialize() {
+      var renderOptions= {
+      preserveViewport: true
+      };
+      directionsDisplay = new google.maps.DirectionsRenderer(renderOptions);
+      var mapOptions = {
+      zoom: 18,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      center: new google.maps.LatLng(25.042706, 121.534130),
+      disableDefaultUI: true,
+      draggableCursor: 'url(blank.cur), auto',
+      draggingCursor: 'url(blank.cur), auto'
+      };
+      if(navigator.onLine){
+      map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+      directionsDisplay.setMap(map);
+      calcRoute();
+      }
+      }
+
+      function calcRoute() {
+      var request = {
+      origin: "台北科技大學, 台北市",
+      destination: "台北市中山區八德路二段146巷5弄9號, 台北市",
+      provideRouteAlternatives: false,
+      travelMode: google.maps.TravelMode.DRIVING
+      };
+      directionsService.route(request, function(result, status) {
+      if (status == google.maps.DirectionsStatus.OK) {
+      directionsDisplay.setDirections(result);
+      map.setCenter(new google.maps.LatLng(25.044746, 121.536918));
+      }
+      });
+      }
+    </script>
+  </head>
+  <body onload="initialize()" scroll="no">
+    <div id="map-canvas">偵測不到網路, 請檢查網路連線是否正常。</div>
+  </body>
+</html>
